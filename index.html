@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nike — Business Anatomy</title>
+<script>try{var t=localStorage.getItem('nba_theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}
+// Entrance animations only run once the frame clock is proven alive (avoids
+// content stuck at opacity:0 in throttled/frozen rendering contexts).
+requestAnimationFrame(function(){requestAnimationFrame(function(){document.documentElement.classList.add('anim-ok');});});</script>
+<link rel="stylesheet" href="vendor/fonts/manrope.css" />
+<link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css" />
+<link rel="stylesheet" href="react/styles.css" />
+
+<!-- libs (vendored locally — see vendor/) -->
+<script src="vendor/maplibre/maplibre-gl.js"></script>
+<script src="vendor/d3.min.js"></script>
+<script src="vendor/topojson-client.min.js"></script>
+<script src="vendor/chart.umd.min.js"></script>
+
+<!-- React + Babel (pinned, vendored) -->
+<script src="vendor/react.development.js"></script>
+<script src="vendor/react-dom.development.js"></script>
+<script src="vendor/babel.min.js"></script>
+</head>
+<body>
+<div id="root"></div>
+
+<!-- image-slot web component (user-fillable photos) -->
+<script src="react/image-slot.js"></script>
+
+<!-- app (Babel-transpiled, in dependency order) -->
+<script type="text/babel" src="react/data.jsx"></script>
+<script type="text/babel" src="react/ui.jsx"></script>
+<script type="text/babel" src="react/charts.jsx"></script>
+<script type="text/babel" src="react/intro.jsx"></script>
+<script type="text/babel" src="react/sections.jsx"></script>
+<script type="text/babel" src="react/app.jsx"></script>
+</body>
+</html>
