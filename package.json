@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Business Anatomy — an interactive 'annual report' dashboard that takes a company apart section by section (Nike). No build step: React 18 + Babel in the browser, MapLibre GL maps, Chart.js and D3.",
-  "homepage": "https://adamsaber-mr.github.io/Business-Anatomy/",
+  "homepage": "https://adamsaber-mr.github.io/Business_Anatomy/",
   "scripts": {
     "start": "http-server . -p 8765 -c-1 -o",
     "dev": "http-server . -p 8765 -c-1 -o",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AdamSaber-mr/Business-Anatomy.git"
+    "url": "https://github.com/AdamSaber-mr/Business_Anatomy.git"
   },
   "license": "MIT",
   "devDependencies": {
